@@ -14,7 +14,7 @@ import org.junit.Test;
 public class TestExemple {
 Somme s;
 Maclass classtest;
-@Before
+@Before // pour initialiser les instances
 // @BeforeEach junit 5
 public void init()
 {
@@ -56,7 +56,7 @@ assertNull(classtest.getList()); // verifier la valeur de retour null
 
 }
 @Test
-@Ignore
+@Ignore // ignore le teste
 public void AssertionNot()
 {
 assertNotNull(classtest.getList());	
